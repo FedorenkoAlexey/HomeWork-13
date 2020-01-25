@@ -6,7 +6,7 @@ export const USERS: User[] = [
     userName: "Bret",
     firstName: "Leanne",
     lastName: "Graham",
-    sex: "male",
+    sex: "Male",
     age: 27
   },
   {
@@ -14,7 +14,7 @@ export const USERS: User[] = [
     userName: "Antonette",
     firstName: "Ervin",
     lastName: "Howell",
-    sex: "female",
+    sex: "Female",
     age: 21
   },
   {
@@ -22,7 +22,7 @@ export const USERS: User[] = [
     userName: "Samantha",
     firstName: "Clementine",
     lastName: "Bauch",
-    sex: "female",
+    sex: "Female",
     age: 32
   },
   {
@@ -30,7 +30,7 @@ export const USERS: User[] = [
     userName: "Leopoldo_Corkery",
     firstName: "Dennis",
     lastName: "Schulist",
-    sex: "male",
+    sex: "Male",
     age: 37
   },
   {
@@ -38,7 +38,7 @@ export const USERS: User[] = [
     userName: "Kurtis",
     firstName: "Elwyn",
     lastName: "Skiles",
-    sex: "male",
+    sex: "Male",
     age: 19
   },
   {
@@ -46,7 +46,7 @@ export const USERS: User[] = [
     userName: "Maxime_Nienow",
     firstName: "Nicholas",
     lastName: "Runolfsdottir",
-    sex: "male",
+    sex: "Male",
     age: 29
   },
   {
@@ -54,7 +54,7 @@ export const USERS: User[] = [
     userName: "Delphine",
     firstName: "Glenna",
     lastName: "Reichert",
-    sex: "female",
+    sex: "Female",
     age: 24
   }
 ];

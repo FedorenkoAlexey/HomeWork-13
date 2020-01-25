@@ -8,16 +8,18 @@ import { USERS } from "../users-data";
   styleUrls: ["./users.component.css"]
 })
 export class UsersComponent implements OnInit {
-  user: User = {
-    id: 11,
-    userName: "Bret",
-    firstName: "Leanne",
-    lastName: "Graham",
-    sex: "male",
-    age: 27
-  };
+  selectedUser: User;
+  users: User[] = USERS;
+  isActive: boolean = true;
 
-  public users: User[] = USERS;
+  onShowUsers(): void {
+    this.isActive = !this.isActive;
+    // console.log(this.isActive);
+  }
+
+  onSelect(user: User): void {
+    this.selectedUser = user;
+  }
 
   constructor() {}
 
