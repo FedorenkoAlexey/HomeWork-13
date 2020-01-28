@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { User } from "../user";
-import { USERS } from "../users-data";
+// import { USERS } from "../users-data";
+import { UserService } from "./user.service";
 
 @Component({
   selector: "app-users",
@@ -9,7 +10,7 @@ import { USERS } from "../users-data";
 })
 export class UsersComponent implements OnInit {
   selectedUser: User;
-  users: User[] = USERS;
+  users: User[];
   isActive: boolean = true;
 
   onShowUsers(): void {
@@ -21,7 +22,13 @@ export class UsersComponent implements OnInit {
     this.selectedUser = user;
   }
 
-  constructor() {}
+  constructor(private userService: UserService) {}
 
-  ngOnInit() {}
+  private getUsers(): void {
+    this.users = this.userService.getUsers();
+  }
+
+  ngOnInit() {
+    this.getUsers();
+  }
 }
